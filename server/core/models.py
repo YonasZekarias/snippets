@@ -9,12 +9,27 @@ class Snippet(models.Model):
         ("C", "C"),
         ("CPP", "C++"),
         ("D", "Dart"),
+        ("html", "HTML"),
+        ("css", "CSS"),
+        ("java", "Java"),
+        ("go", "Go"),
+        ("rb", "Ruby"),
+        ("php", "PHP"),
+        ("swift", "Swift"),
+        ("ts", "TypeScript"),
+        ("kotlin", "Kotlin"),
+        ("rust", "Rust"),
+        ("r", "R"),
+        ("sql", "SQL"),
+        ("bash", "Bash"),
+        ("json", "JSON"),
+        ('other', 'Other'),
     ]
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=100)
     code = models.TextField(blank=False, null=False)
-    language = models.CharField(max_length=4, choices=LANGUAGE_CHOICES, default="PY")
+    language = models.CharField(max_length=7, choices=LANGUAGE_CHOICES, default="PY")
 
    
     author = models.ForeignKey(

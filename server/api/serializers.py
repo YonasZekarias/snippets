@@ -4,10 +4,13 @@ from django.contrib.auth import get_user_model
 User=get_user_model()
 
 class SnippetSerializer(serializers.ModelSerializer):
+   
     class Meta:
         model = Snippet
         fields = '__all__'
         read_only_fields = ['updated_at', 'created_at','author']
+
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User

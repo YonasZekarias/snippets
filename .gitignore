@@ -1,19 +1,23 @@
+# for backend
 # Ignore virtual environments
-venv/
-env/
+server/venv/
+servervenv/env/
 .venv/
-
+.DS_Store
 # Ignore database
-*.sqlite3
+server/snippets/venv/*.sqlite3
 
 # Ignore compiled Python files
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+server/snippets/venv/__pycache__/
+server/snippets/venv/*.pyc
+server/snippets/venv/*.pyo
+server/snippets/venv/*.pyd
 
 # Ignore environment variables
-.env
+server/snippets/venv/.env
 
 # Ignore Django migrations
-**/migrations/
+server/snippets/venv/**/migrations/
+# for frontend
+client/node_modules
+
