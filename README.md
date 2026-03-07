@@ -2,13 +2,6 @@
 
 A collection of reusable code snippets in multiple programming languages.
 
-## Language Composition
-
-- **JavaScript** – 88.6%
-- **Python** – 9.6%
-- **CSS** – 1.6%
-- **HTML** – 0.2%
-
 ## Overview
 
 This repository serves as a library of useful code snippets, handy for various common tasks and reference. The primary language is JavaScript, but you will also find Python scripts, styling examples in CSS, and a few HTML templates.
